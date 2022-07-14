@@ -28,7 +28,7 @@ domain: dtingey.github.io
 github_username:  dtingey
 
 # Build settings
-theme: jekyll-theme-cayman
+theme: jekyll-cayman-theme
 plugins:
   - jekyll-feed
 
