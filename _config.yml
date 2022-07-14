@@ -8,9 +8,5 @@ gist:
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
-<<<<<<< Updated upstream
 
 theme: jekyll-theme-cayman
-=======
-regeneration: -w
->>>>>>> Stashed changes
