@@ -5,4 +5,4 @@
 layout: home
 ---
 
-This is Damon Tingey. I like to eat chicken.
+This is Damon Tingey. I like to eat chicken. [About](https://dtingey.github.io/about/)
