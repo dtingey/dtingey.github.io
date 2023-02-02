@@ -23,7 +23,7 @@ email: damon.tingey@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is a site all about me, Damon Tingey.
 baseurl: "/index" # the subpath of your site, e.g. /blog
-url: "https://dtingey.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://dtingey.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 domain: dtingey.github.io
 github_username:  dtingey
 

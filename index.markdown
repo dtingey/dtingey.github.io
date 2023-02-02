@@ -4,8 +4,7 @@
 
 layout: default
 title: "Home"
-permalink: /
+permalink: /index
 ---
 
-
-This is Damon Tingey. I like to eat chicken. [About](https://dtingey.github.io/about/)
+# This is Damon Tingey. I like to eat chicken. [About](https://dtingey.github.io/about/)
