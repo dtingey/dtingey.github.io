@@ -28,9 +28,10 @@ domain: dtingey.github.io
 github_username:  dtingey
 
 # Build settings
-theme: jekyll-cayman-theme
+theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
