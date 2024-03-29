@@ -10,7 +10,7 @@
 <div class="container mx-auto px-4">
   <section class="text-center py-12">
     <h2 class="text-4xl font-bold">Hello, I'm <span class="text-blue-500">Damon Tingey</span></h2>
-    <p class="text-xl mt-4">I am a ML Engineer who specializes in web applications integration and development.</p>
+    <p class="text-xl mt-4">I am a ML Engineer who specializes in web application integration and development.</p>
   </section>
 
   <section class="py-12">
