@@ -1,46 +1,48 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-
 <script>
-  let projects = [
-    { name: "Project 1", description: "This is a description of project 1.", link: "#" },
-    { name: "Project 2", description: "This is a description of project 2.", link: "#" },
-    { name: "Project 3", description: "This is a description of project 3.", link: "#" }
+  let skills = ['ML Engineering', 'Deep Learning', 'Web Development', 'Software Engineering', 'Data Science'];
+  let experiences = [
+    { year: '2023-Present', role: 'Junior Data Scientist', company: 'ZONTAL Inc.' },
+    { year: '2021-2023', role: 'Undergraduate Researcher', company: 'BYU Department of Physics' },
+    { year: '2022-2023', role: 'Machine Learning TA', company: 'The Coding School' }
   ];
 </script>
 
-<style>
-  .container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-  }
-  .project {
-    margin-bottom: 20px;
-  }
-  .project h2 {
-    margin: 0;
-  }
-  .project p {
-    margin: 5px 0;
-  }
-  .project a {
-    color: #007BFF;
-    text-decoration: none;
-  }
-</style>
+<div class="container mx-auto px-4">
+  <section class="text-center py-12">
+    <h2 class="text-4xl font-bold">Hello, I'm <span class="text-blue-500">Damon Tingey</span></h2>
+    <p class="text-xl mt-4">I am a ML Engineer who specializes in web applications integration and development.</p>
+  </section>
 
-<div class="container">
-  <h2>About Me</h2>
-  <p>Hello! I'm a software developer with a passion for building web applications. I specialize in Svelte and have experience with other modern JavaScript frameworks.</p>
-  
-  <h2>Projects</h2>
-  {#each projects as {name, description, link}}
-    <div class="project">
-      <h3>{name}</h3>
-      <p>{description}</p>
-      <a href="{link}">View Project</a>
+  <section class="py-12">
+    <h3 class="text-3xl font-semibold mb-6">Skills</h3>
+    <div class="flex justify-center gap-4 flex-wrap">
+      {#each skills as skill}
+        <span class="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full">{skill}</span>
+      {/each}
     </div>
-  {/each}
+  </section>
+
+  <section class="py-12">
+    <h3 class="text-3xl font-semibold mb-6">Experience</h3>
+    <div class="space-y-4">
+      {#each experiences as experience}
+        <div class="bg-gray-100 p-4 rounded-lg">
+          <p class="font-bold">{experience.year}</p>
+          <p>{experience.role} at {experience.company}</p>
+        </div>
+      {/each}
+    </div>
+  </section>
+
+  <section class="text-center py-12">
+    <h3 class="text-3xl font-semibold">Let's Connect</h3>
+    <p class="mt-4">Feel free to reach out through any of the platforms below.</p>
+    <div class="flex justify-center gap-4 mt-4">
+      <a href="https://linkedin.com/in/damon-tingey" class="text-blue-600">LinkedIn</a>
+      <a href="https://github.com/dtingey" class="text-gray-900">GitHub</a>
+      <a href="mailto:damon.tingey@gmail.com" class="text-red-500">Email</a>
+    </div>
+  </section>
 </div>
+
 

@@ -1,5 +1,5 @@
-import adapter from "@sveltejs/adapter-static"; 
-// was "@sveltejs/adapter-auto"
+import adapter from "@sveltejs/adapter-static";
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 const dev = "production" === "development";
 
@@ -10,7 +10,8 @@ const config = {
             pages: "docs",
             assets: "docs"
         })
-    }
+    },
+	preprocess: vitePreprocess()
 };
 
 export default config;
